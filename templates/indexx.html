@@ -1,0 +1,649 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>Mediplus - Free Medical and Doctor Directory HTML Template.</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="img/favicon.png">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='nice-select.css') }}">
+
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='font-awesome.min.css') }}">
+
+		<!-- icofont CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='icofont.css') }}">
+
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='slicknav.min.css') }}">
+
+		<!-- Owl Carousel CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='owl-carousel.css') }}">
+
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='datepicker.css') }}">
+
+		<!-- Animate CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='animate.min.css') }}">
+
+		<!-- Magnific Popup CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='magnific-popup.css') }}">
+		
+		<!-- Medipro CSS -->
+
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='responsive.css') }}">
+		
+	
+		 <style>
+			body, html {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+			}
+			.carousel {
+				height: calc(90vh - 30px); 
+				width: 100%;
+				position: relative;
+				overflow: hidden;
+
+				
+			}
+			.carousel-inner {
+				height: 100%;
+			}
+			.carousel-item {
+				height: 100%;
+				background-size: cover;
+				background-position: center;
+			}
+			
+
+		
+		.chart-container {
+            width: 100%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            margin-left: 100;
+            height: 100%;
+        }
+        .chart-title {
+			margin-top: 25px;
+        }
+		
+		#dashboard {
+            padding: 50px 0;
+            background-color: #ececec;
+        }
+        .info-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .info-box-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .info-box-text {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+	
+		
+.account-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.account-dropdown li {
+    margin-bottom: 5px;
+}
+
+/* Adjust the position of the dropdown */
+.account-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px; /* Increase padding for more space */
+    border-radius: 5px;
+    z-index: 999;
+    right: 0;
+	
+}
+.account {
+    position: relative;
+	margin-right: 20px;
+}
+.account-icon i {
+    color: #333; /* Change to desired color */
+
+}
+/* Align the account icon */
+.account-icon {
+    display: inline-block;
+    padding: 10px; /* Add padding to the icon */
+    cursor: pointer;
+	margin-top: 20px;
+}
+
+.patient  .container {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+
+	margin-bottom: 20px;
+}
+.patient-details {
+	margin-bottom: 30px;
+}
+.patient-details h2 {
+	margin-bottom: 10px;
+}
+
+
+.prescription {
+margin-bottom: 30px;
+border: 1px solid #ccc;
+border-radius: 8px;
+padding: 20px;
+}
+.prescription-content {
+font-family: Arial, sans-serif;
+}
+.prescription-header {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+.prescription-title {
+text-align: left;
+}
+.prescription-doctor {
+text-align: right;
+}
+.prescription-details {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+.patient-info, .prescription-info {
+width: 45%;
+}
+.prescription-medicine {
+margin-bottom: 20px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+}
+th, td {
+border: 1px solid #ccc;
+padding: 8px;
+text-align: left;
+}
+th {
+background-color: #f2f2f2;
+}
+.prescription-note {
+font-style: italic;
+}
+
+
+
+.prescription-info {
+margin-bottom: 20px;
+margin-left: 90px;
+
+}
+
+.prescription-info1 {
+margin-bottom: 50px;
+margin-top: 30px;
+
+
+}
+
+.prescription-info h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+
+
+.prescription-info ul {
+list-style-type: disc;
+margin-left: 20px;
+margin-bottom: 10px;
+}
+
+.prescription-info ul li {
+font-size: 16px;
+line-height: 1.5;
+margin-bottom: 5px;
+}
+.prescription-info h3 {
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+.prescription-info1 p {
+font-size: 16px;
+line-height: 1.6; /* Increase line height for better readability */
+margin-bottom: 15px;
+margin-top: 10px;
+}
+
+.bt-logout{
+	padding-top: 10px;
+	padding-left: 240px;
+}
+		
+			</style>
+    </head>
+    <body>
+	
+
+	
+ 		<!-- Header Area -->
+		<header class="header" >
+			<!-- Topbar -->
+
+			<!-- End Topbar -->
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="index.html"><img style="width:200px;" src="{{ url_for('static', filename='logo.jpg') }}" alt="#"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-7 col-md-9 col-12">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li class="active"><a href="#">Home</a></li>
+											<li><a href="#patient-details">Profile</a>
+											</li>
+											<li><a href="#">Visualization </a></li>
+											<li><a href="#">About Us</a></li>
+											<li><a href="#">Contact Us</a></li>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							<!--<div class="col-lg-2 col-md-12 col-sm-12 col-12">
+								<div class="account" style="margin-left: 250px;">									
+									<a href="#" class="account-icon" id="dropdown-toggle"><i class="fas fa-user"></i></a>
+									<div id="dro" class="account-dropdown">
+    									<ul>
+        									<li><strong>Name:</strong> John Doe</li>
+        									<li><strong>Email:</strong> johndoe@example.com</li>	
+    									</ul>
+									</div>
+								</div>-->
+								<div class="col-lg-2 col-12">
+									<div class="get-quote bt-logout">
+										<a href="/logout" style="background-color: #34b4eb;" class="btn" >Log out</a>
+									</div>
+								</div>
+								  
+									
+								</div>
+								<!-- End Account Dropdown -->
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		
+		<div class="carousel-item active" style="height: 670px; background-image: url('{{ url_for('static', filename='banner.jpeg') }}')">
+			<h1 style="padding-top: 200px; padding-left: 300px;">Welcome {{ data.name }},</h1>
+			<h1 style="padding-left: 300px;">Your better life is our better life.</h1>
+		</div>
+		
+		
+
+		<!-- Lung Tumor Step -->
+		<section id="lung-tumor" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-12">
+						<div class="section-title" style="padding-top: 650px;">
+							<h2>Lung Tumor Diagnosis</h2>
+							<p>Here's what you need to know about lung tumor diagnosis:</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="box">
+							<img src="{{ url_for('static', filename='symptom.gif') }}" alt="Symptoms">
+							<h3>1. Symptoms</h3>
+							<p>Recognize common symptoms such as persistent cough, chest pain, and shortness of breath.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="box large-box"> <!-- Added class "large-box" to enlarge this box -->
+							<img src="{{ url_for('static', filename='ctimage.gif') }}" alt="Symptoms">
+							<h3>2. Imaging Tests</h3>
+							<p>Undergo imaging tests like X-rays or CT scans to detect abnormalities in the 
+								lungs.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="box">
+							<img src="{{ url_for('static', filename='image3.gif') }}" alt="Symptoms">
+							<h3>3. Biopsy</h3>
+							<p>A biopsy may be necessary to confirm the presence of a tumor and determine its type.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="dashboard">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>DASHBOARD</h2>
+						</div>
+					</div>
+				</div>
+			   
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="info-box">
+									<div class="info-box-icon"><i class="fa fa-calendar"></i></div>
+									<div class="info-box-text">Hours Spent Today</div>
+									<div class="info-box-text">5 Min</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="info-box">
+									<div class="info-box-icon"><i class="fa fa-phone"></i></div>
+									<div class="info-box-text">Total Teleconsultation</div>
+									<div class="info-box-text">30</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="info-box">
+									<div class="info-box-icon"><i class="fa fa-globe"></i></div>
+									<div class="info-box-text">Total Online Appointments</div>
+									<div class="info-box-text">20</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="chart-container">
+							<h2 class="chart-title">Total Hours Spent</h2>
+							<canvas id="appointmentChart"></canvas>
+						</div>
+					</div>
+				  
+				</div>
+			</div>
+		</section>
+	 
+
+		<!-- End Dashboard Section -->
+	
+		<!-- jquery Min JS -->
+		<script src="js/jquery.min.js"></script>
+		<!-- Chart.js -->
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script>
+			// Total Appointments Chart
+			var ctx1 = document.getElementById('appointmentChart').getContext('2d');
+			var appointmentChart = new Chart(ctx1, {
+				type: 'line',
+				data: {
+					labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+					datasets: [{
+						label: 'Total Hours Spent (Last Week)',
+						data: [40, 35, 30, 35, 25, 45, 30], // Sample data, replace with actual data
+						backgroundColor: 'rgba(255, 99, 132, 0.2)',
+						borderColor: 'rgba(255, 99, 132, 1)',
+						borderWidth: 1
+					}]
+				},
+				options: {
+					scales: {
+						yAxes: [{
+							ticks: {
+								beginAtZero: true
+							}
+						}]
+					}
+				}
+			});
+	
+			
+		</script>	
+		
+
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-12">
+						<div class="about-image">
+							<img src="{{ url_for('static', filename='doc.png') }}" alt="About Us">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-12">
+						<div class="about-content">
+							<h2>About Us</h2>
+							<p>This portal is dedicated to lung tumor segmentation. It serves both patients and doctors, allowing doctors to view patient CT images and segment them through the website. Patients can also access their prescriptions, appointments,
+								 awareness materials, symptoms, and more.</p>
+								 
+						<p>"Our platform, dedicated to lung tumor segmentation, serves as a vital resource for patients and healthcare professionals alike. Patients benefit from access to their medical records, prescriptions, and appointment scheduling, alongside educational materials covering lung tumor awareness and symptoms. For healthcare professionals, particularly radiologists and oncologists, our platform facilitates the review of patient CT images, segmentation tasks, tumor analysis, and collaborative treatment planning.
+							 We prioritize patient privacy and data security, ensuring that all medical information is handled with the utmost confidentiality and complies with relevant healthcare regulations."</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="patient" id="patient-details" style="padding-top: 20px">
+				<div class="container">
+					<h1>Patient Details</h1>
+					
+						<div class="patient-details">
+							<h2>Patient Information</h2>
+							<p><strong>Name:</strong>  {{ data.name }}</p>
+							<p><strong>Age:</strong>  {{ data.age }}</p>
+							<p><strong>Gender:</strong>  {{ data.gender }}</p>
+							<p><strong>Contact:</strong>  {{ data.phone_number }}</p>
+						</div>	
+
+						<div style="text-align:right; padding-bottom: 15px;	">
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+								Scan Image
+							  </button>
+							  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+									  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									  </button>
+									</div>
+									<div class="modal-body">
+									  ...
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									  <button type="button" class="btn btn-primary">Save changes</button>
+									</div>
+								  </div>
+								</div>
+							  </div>
+						</div>
+		
+		
+					<div class="prescription-wrapper">
+						<div class="prescription">
+				   
+						<h2>Prescription</h2>
+						<div class="prescription-content">
+							<div class="prescription-header">
+								<div class="prescription-title">
+								</div>
+								<div class="prescription-doctor">
+									<p>Dr. John Smith</p>
+									<p>MD, PhD</p>
+									<p>General Practitioner</p>
+								</div>
+							</div>
+							<div class="prescription-details">
+								<div class="patient-info">
+									<p><strong>Patient Name:</strong> {{ data.name }}</p>
+									<p><strong>Age:</strong>  {{ data.age }}</p>
+									<p><strong>Gender:</strong>  {{ data.gender }}</p>
+									<p><strong>Problem:</strong> Lung Tumor</p> <!-- Added problem of the patient -->
+								</div>
+								<div class="prescription-info">
+									<p><strong style="padding-left: 120px;">Date:</strong> February 22, 2024</p>
+								</div>
+							</div>
+							<div class="prescription-info1">
+								<h4 style="font-weight: 600;">Doctor's Consultation:</h4>
+								<p style="padding-left: 50px;">{{ data.consultation }}</p>
+							</div>
+							<div class="prescription-note">
+								<p><strong>Doctor's Note:</strong> Take with food. Avoid alcohol.</p>
+							</div>
+		
+							
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</section>
+		
+		<!-- jquery Min JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='jquery.min.js') }}"></script>	
+		<!-- jquery Migrate JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='jquery-migrate-3.0.0.js') }}"></script>	
+		<!-- jquery Ui JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='jquery-ui.min.js') }}"></script>	
+		<!-- Easing JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='easing.js') }}"></script>	
+		<!-- Color JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='colors.js') }}"></script>	
+		<!-- Popper JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='popper.min.js') }}"></script>	
+		<!-- Bootstrap Datepicker JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='bootstrap-datepicker.js') }}"></script>	
+		<!-- Jquery Nav JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='jquery.nav.js') }}"></script>	
+		<!-- Slicknav JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='slicknav.min.js') }}"></script>	
+		<!-- ScrollUp JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='jquery.scrollUp.min.js') }}"></script>	
+		<!-- Niceselect JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='niceselect.js') }}"></script>	
+		<!-- Tilt Jquery JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='tilt.jquery.min.js') }}"></script>	
+		<!-- Owl Carousel JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='owl-carousel.js') }}"></script>	
+		<!-- counterup JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='jquery.counterup.min.js') }}"></script>	
+		<!-- Steller JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='steller.js') }}"></script>	
+		<!-- Wow JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='wow.min.js') }}"></script>	
+		<!-- Magnific Popup JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='jquery.magnific-popup.min.js') }}"></script>	
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.js') }}"></script>	
+		<!-- Main JS -->
+		<script rel="stylesheet" href="{{ url_for('static', filename='main.js') }}"></script>	
+		<!-- Icon JS-->
+		<script src="https://kit.fontawesome.com/f071a247a4.js" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+				// Toggle account dropdown
+				$('.account-icon').click(function(event){
+					event.stopPropagation(); // Prevent the event from bubbling up
+					$('.account-dropdown').toggle();
+				});
+			
+				// Hide account dropdown when clicking outside
+				$(document).click(function(event) {
+					if (!$(event.target).closest('.account-icon').length && !$(event.target).closest('.account-dropdown').length) {
+						$('.account-dropdown').hide();
+					}
+				});
+			});
+			
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+			
+		</script>	
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var dropdownToggle = document.getElementById('dropdown-toggle');
+				var dropdownMenu = document.getElementById('dro');
+		
+				dropdownToggle.addEventListener('click', function() {
+					dropdownMenu.classList.toggle('show');
+				});
+			});
+		</script>
+    </body>
+</html>

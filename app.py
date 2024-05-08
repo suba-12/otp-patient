@@ -7,12 +7,14 @@ import string
 app = Flask(__name__)
 app.secret_key = "harishbot"
 
+# MongoDB connection
 mongo_uri = "mongodb+srv://harishbhalaa:harish@backend.w8koxqb.mongodb.net/"
 client = MongoClient(mongo_uri)
 db = client.test
 otp_collection = db.otps
 patient_collection = db.tech_patient_datas
 
+# Twilio configuration
 account_sid = 'ACaf40853e8648498d022e7bff90a21fe9'          #AC1ae2f5bf0feae2b6330a18caaf1d4cb6
 auth_token = '7dc21f9b2b24d733dc7f7a1906f69b7d'             #fec7a323768bc6824250b828baa803d7
 client = Client(account_sid, auth_token)  
@@ -51,7 +53,7 @@ def check_otp():
         if patient_data:
             return render_template('indexx.html', data=patient_data)
         else:
-            return render_template('no_data.html')
+            return "Patient data not found!"
     else:
         return "Invalid OTP"
 

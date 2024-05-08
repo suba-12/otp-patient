@@ -16,9 +16,9 @@ patient_collection = db.tech_patient_datas
 
 # Twilio configuration
 account_sid = 'ACaf40853e8648498d022e7bff90a21fe9'          #AC1ae2f5bf0feae2b6330a18caaf1d4cb6
-auth_token = '7dc21f9b2b24d733dc7f7a1906f69b7d'             #fec7a323768bc6824250b828baa803d7
+auth_token = '9d128847bc4adacee9ee4dd2663ca7a7'             #fec7a323768bc6824250b828baa803d7
 client = Client(account_sid, auth_token)  
-twilio_number = '+13253131997'                              #+14342160730   
+twilio_number = '+13253131997'                              #+14342160730      
 
 
 def send_otp(phone_number):

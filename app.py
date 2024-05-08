@@ -13,10 +13,10 @@ db = client.test
 otp_collection = db.otps
 patient_collection = db.tech_patient_datas
 
-account_sid = 'AC1ae2f5bf0feae2b6330a18caaf1d4cb6'          #ACaf40853e8648498d022e7bff90a21fe9
-auth_token = '8b8e71bd06e88156a8bf4fb6ca2df346'             #6cd8165bdbd6a249e56678292ae37a67
+account_sid = 'ACaf40853e8648498d022e7bff90a21fe9'          #AC1ae2f5bf0feae2b6330a18caaf1d4cb6
+auth_token = '7dc21f9b2b24d733dc7f7a1906f69b7d'             #fec7a323768bc6824250b828baa803d7
 client = Client(account_sid, auth_token)  
-twilio_number = '+14342160730'                                #+15169904081
+twilio_number = '+13253131997'                              #+14342160730   
 
 
 def send_otp(phone_number):
